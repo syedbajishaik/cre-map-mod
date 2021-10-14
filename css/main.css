@@ -2059,11 +2059,13 @@ div[data-content].active {
     background: none;
 }
 
-.client_list_table .filter_icon {
+.client_list_table .filter_icon,
+.client_list_table .filter_icon a {
     color: #566268;
     display: inline-flex;
     align-items: center;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .client_list_table .filter_icon img {

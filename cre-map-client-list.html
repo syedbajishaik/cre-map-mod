@@ -34,7 +34,7 @@
           ER Module
         </div>
         <div class="page_title text_16 font_500 p_2 h_100">
-            ERE Mapping
+            CRE Mapping
         </div>
         <div class="nav-items">
           <ul>
@@ -123,7 +123,7 @@
       <div class="leftSideBar_menu_option_list">
         <div class="list_header">
           <h4 class="text_16 font_600 mt_0 mb_0">
-            ERE Mapping
+            CRE Mapping
             <span class="ic_add modal_open" data-modalname="add_ere_modal"><img src="./images/icons/ic-add.svg"
                 alt="ic-add" /></span>
           </h4>
@@ -190,7 +190,7 @@
         </div>
         <div class="list_footer px_2 pb_2 pt_2">
           <div class="rcs_search w_100 input_icon">
-            <input type="search" placeholder="Search ER" class="text_14 font_400" />
+            <input type="search" placeholder="Search CRE" class="text_14 font_400" />
             <span><img src="./images/icons/ic-search.svg" alt="ic-search" /></span>
           </div>
         </div>
@@ -254,28 +254,30 @@
           </div>
           <div class="close_wrap flex_0_1">
             <button class="border_0 bg_trans p_0">
-              <a href="ere-map1.html"><img src="./images/icons/ic-close.svg" alt="" class="" /></a>
+              <a href="cre-map1.html"><img src="./images/icons/ic-close.svg" alt="" class="" /></a>
             </button>
           </div>
         </div>
       </div>
       <div class="ere_card">
         <div class="tanNcontent_wrapper">
-          <div class="tab_wrap d-flex">
+          <!-- <div class="tab_wrap d-flex">
             <div class="nav-tab pt_1 pb_1 pl_3 pr_3 active" data-tab="one">Default Client</div>
             <div class="nav-tab pt_1 pb_1 pl_3 pr_3" data-tab="two">NRT client</div>
-          </div>
+          </div> -->
           <div class="content_wrap">
             <div data-content="one" class="active pane-tab">
               <!-- / tab 1 content -->
-              <div class="client_list_table redo_check_status po_candidate p_3 mt_3">
+              <div class="client_list_table redo_check_status po_candidate p_3 mt_2">
                 <div class="rcs_head">
                   <h4 class="text_16 font_500 mt_0 mb_0 primary_text_color">
                     Active Clients List (30 clients)
                   </h4>
                   <div class="xl_icon ml_auto pos-relative">
-                    <span class="filter_icon cursor_pointer"><img src="./images/icons/ic-import.svg"
-                        alt="ic-import">Import XLS file</span>
+                    <span class="filter_icon cursor_pointer">
+                      <a href="cre-map-excel-file-import-for-clients.html"><img src="./images/icons/ic-import.svg" alt="ic-import">
+                        Import XLS file</a>
+                    </span>
                     <span class="filter_icon ml_3 cursor_pointer modal_open" data-modalname="add_def_client_modal"><img
                         src="./images/icons/ic-add-blue.svg" alt="ic-add-blue">Add Client</span>
                     <span class="filter_icon ml_3 cursor_pointer"><img src="./images/icons/ic-history.svg"
@@ -473,213 +475,6 @@
               </div>
               <!-- tab 1 content \ -->
             </div>
-            <div data-content="two" class="pane-tab">
-              <!-- / tab 2 content -->
-              <div class="client_list_table redo_check_status po_candidate p_3 mt_3">
-                <div class="rcs_head">
-                  <h4 class="text_16 font_600 mt_0 mb_0 primary_text_color">
-                    Active NRT Clients List (30 clients)
-                  </h4>
-                  <div class="xl_icon ml_auto pos-relative">
-                    <span class="filter_icon cursor_pointer"><img src="./images/icons/ic-import.svg"
-                        alt="ic-import">Import XLS file</span>
-                    <span class="filter_icon ml_3 cursor_pointer modal_open" data-modalname="add_nrt_client_modal"><img
-                        src="./images/icons/ic-add-blue.svg" alt="ic-add-blue">Add Client</span>
-                    <span class="filter_icon ml_3 cursor_pointer"><img src="./images/icons/ic-history.svg"
-                        alt="ic-history">History</span>
-                    <span class="filter_icon ml_3 cursor_pointer"><img src="./images/icons/ic-excel-blue.svg"
-                        alt="ic-excel-blue">Export to Excel</span>
-                  </div>
-                </div>
-                <div class="rcs_body pt_4">
-                  <div class="table_wrap accordion" id="accordion1">
-                    <div class="custom_tr accordion-group">
-                      <div class="custom_th w_custom_25">
-                        NRT Client Name
-                        <span><img src="./images/icons/ic-topfilter-bottom.svg" alt="ic-topfilter-bottom"></span>
-                      </div>
-                      <div class="custom_th w_custom_14">
-                        Client Code
-                        <span><img src="./images/icons/ic-topfilter-bottom.svg" alt="ic-topfilter-bottom"></span>
-                      </div>
-                      <div class="custom_th w_custom_14">
-                        Zone
-                        <span><img src="./images/icons/ic-topfilter-bottom.svg" alt="ic-topfilter-bottom"></span>
-                      </div>
-                      <div class="custom_th w_custom_14">
-                        Project Location
-                        <span><img src="./images/icons/ic-topfilter-bottom.svg" alt="ic-topfilter-bottom"></span>
-                      </div>
-                      <div class="custom_th w_custom_14">
-                        Start Date
-                        <span><img src="./images/icons/ic-topfilter-bottom.svg" alt="ic-topfilter-bottom"></span>
-                      </div>
-                      <div class="custom_th w_custom_14">
-                        End Date
-                        <span><img src="./images/icons/ic-topfilter-bottom.svg" alt="ic-topfilter-bottom"></span>
-                      </div>
-                      <div class="custom_th w_custom_5">
-                        &nbsp;
-                      </div>
-                    </div>
-                    <div class="tbody">
-                      <div class="custom_tr row">
-                        <div class="custom_td w_custom_25">AGS-Samsung Electronics Corporation</div>
-                        <div class="custom_td w_custom_14">AG069</div>
-                        <div class="custom_td w_custom_14">New York</div>
-                        <div class="custom_td w_custom_14">Alabama</div>
-                        <div class="custom_td w_custom_14">07/31/2020</div>
-                        <div class="custom_td w_custom_14">03/04/2021</div>
-                        <div class="custom_td w_custom_5 text-center modal_open" data-modalname="edit_nrt_client_modal">
-                          <span><img src="./images/icons/ic-edit-client.svg" alt="ic-edit-client"></span>
-                        </div>
-                      </div>
-                      <div class="custom_tr row">
-                        <div class="custom_td w_custom_25">AGS-Samsung Electronics Corporation</div>
-                        <div class="custom_td w_custom_14">AG069</div>
-                        <div class="custom_td w_custom_14">New York</div>
-                        <div class="custom_td w_custom_14">Alabama</div>
-                        <div class="custom_td w_custom_14">07/31/2020</div>
-                        <div class="custom_td w_custom_14">03/04/2021</div>
-                        <div class="custom_td w_custom_5 text-center"><span><img src="./images/icons/ic-edit-client.svg"
-                              alt="ic-edit-client"></span></div>
-                      </div>
-                      <div class="custom_tr row">
-                        <div class="custom_td w_custom_25">AGS-Samsung Electronics Corporation</div>
-                        <div class="custom_td w_custom_14">AG069</div>
-                        <div class="custom_td w_custom_14">New York</div>
-                        <div class="custom_td w_custom_14">Alabama</div>
-                        <div class="custom_td w_custom_14">07/31/2020</div>
-                        <div class="custom_td w_custom_14">03/04/2021</div>
-                        <div class="custom_td w_custom_5 text-center"><span><img src="./images/icons/ic-edit-client.svg"
-                              alt="ic-edit-client"></span></div>
-                      </div>
-                      <div class="custom_tr row">
-                        <div class="custom_td w_custom_25">AGS-Samsung Electronics Corporation</div>
-                        <div class="custom_td w_custom_14">AG069</div>
-                        <div class="custom_td w_custom_14">New York</div>
-                        <div class="custom_td w_custom_14">Alabama</div>
-                        <div class="custom_td w_custom_14">07/31/2020</div>
-                        <div class="custom_td w_custom_14">03/04/2021</div>
-                        <div class="custom_td w_custom_5 text-center"><span><img src="./images/icons/ic-edit-client.svg"
-                              alt="ic-edit-client"></span></div>
-                      </div>
-                      <div class="custom_tr row">
-                        <div class="custom_td w_custom_25">AGS-Samsung Electronics Corporation</div>
-                        <div class="custom_td w_custom_14">AG069</div>
-                        <div class="custom_td w_custom_14">New York</div>
-                        <div class="custom_td w_custom_14">Alabama</div>
-                        <div class="custom_td w_custom_14">07/31/2020</div>
-                        <div class="custom_td w_custom_14">03/04/2021</div>
-                        <div class="custom_td w_custom_5 text-center"><span><img src="./images/icons/ic-edit-client.svg"
-                              alt="ic-edit-client"></span></div>
-                      </div>
-                      <div class="custom_tr row">
-                        <div class="custom_td w_custom_25">AGS-Samsung Electronics Corporation</div>
-                        <div class="custom_td w_custom_14">AG069</div>
-                        <div class="custom_td w_custom_14">New York</div>
-                        <div class="custom_td w_custom_14">Alabama</div>
-                        <div class="custom_td w_custom_14">07/31/2020</div>
-                        <div class="custom_td w_custom_14">03/04/2021</div>
-                        <div class="custom_td w_custom_5 text-center"><span><img src="./images/icons/ic-edit-client.svg"
-                              alt="ic-edit-client"></span></div>
-                      </div>
-                      <div class="custom_tr row">
-                        <div class="custom_td w_custom_25">AGS-Samsung Electronics Corporation</div>
-                        <div class="custom_td w_custom_14">AG069</div>
-                        <div class="custom_td w_custom_14">New York</div>
-                        <div class="custom_td w_custom_14">Alabama</div>
-                        <div class="custom_td w_custom_14">07/31/2020</div>
-                        <div class="custom_td w_custom_14">03/04/2021</div>
-                        <div class="custom_td w_custom_5 text-center"><span><img src="./images/icons/ic-edit-client.svg"
-                              alt="ic-edit-client"></span></div>
-                      </div>
-                      <div class="custom_tr row">
-                        <div class="custom_td w_custom_25">AGS-Samsung Electronics Corporation</div>
-                        <div class="custom_td w_custom_14">AG069</div>
-                        <div class="custom_td w_custom_14">New York</div>
-                        <div class="custom_td w_custom_14">Alabama</div>
-                        <div class="custom_td w_custom_14">07/31/2020</div>
-                        <div class="custom_td w_custom_14">03/04/2021</div>
-                        <div class="custom_td w_custom_5 text-center"><span><img src="./images/icons/ic-edit-client.svg"
-                              alt="ic-edit-client"></span></div>
-                      </div>
-                      <div class="custom_tr row">
-                        <div class="custom_td w_custom_25">AGS-Samsung Electronics Corporation</div>
-                        <div class="custom_td w_custom_14">AG069</div>
-                        <div class="custom_td w_custom_14">New York</div>
-                        <div class="custom_td w_custom_14">Alabama</div>
-                        <div class="custom_td w_custom_14">07/31/2020</div>
-                        <div class="custom_td w_custom_14">03/04/2021</div>
-                        <div class="custom_td w_custom_5 text-center"><span><img src="./images/icons/ic-edit-client.svg"
-                              alt="ic-edit-client"></span></div>
-                      </div>
-                      <div class="custom_tr row">
-                        <div class="custom_td w_custom_25">AGS-Samsung Electronics Corporation</div>
-                        <div class="custom_td w_custom_14">AG069</div>
-                        <div class="custom_td w_custom_14">New York</div>
-                        <div class="custom_td w_custom_14">Alabama</div>
-                        <div class="custom_td w_custom_14">07/31/2020</div>
-                        <div class="custom_td w_custom_14">03/04/2021</div>
-                        <div class="custom_td w_custom_5 text-center"><span><img src="./images/icons/ic-edit-client.svg"
-                              alt="ic-edit-client"></span></div>
-                      </div>
-                      <div class="custom_tr row">
-                        <div class="custom_td w_custom_25">AGS-Samsung Electronics Corporation</div>
-                        <div class="custom_td w_custom_14">AG069</div>
-                        <div class="custom_td w_custom_14">New York</div>
-                        <div class="custom_td w_custom_14">Alabama</div>
-                        <div class="custom_td w_custom_14">07/31/2020</div>
-                        <div class="custom_td w_custom_14">03/04/2021</div>
-                        <div class="custom_td w_custom_5 text-center"><span><img src="./images/icons/ic-edit-client.svg"
-                              alt="ic-edit-client"></span></div>
-                      </div>
-                      <div class="custom_tr row">
-                        <div class="custom_td w_custom_25">AGS-Samsung Electronics Corporation</div>
-                        <div class="custom_td w_custom_14">AG069</div>
-                        <div class="custom_td w_custom_14">New York</div>
-                        <div class="custom_td w_custom_14">Alabama</div>
-                        <div class="custom_td w_custom_14">07/31/2020</div>
-                        <div class="custom_td w_custom_14">03/04/2021</div>
-                        <div class="custom_td w_custom_5 text-center"><span><img src="./images/icons/ic-edit-client.svg"
-                              alt="ic-edit-client"></span></div>
-                      </div>
-                      <div class="custom_tr row">
-                        <div class="custom_td w_custom_25">AGS-Samsung Electronics Corporation</div>
-                        <div class="custom_td w_custom_14">AG069</div>
-                        <div class="custom_td w_custom_14">New York</div>
-                        <div class="custom_td w_custom_14">Alabama</div>
-                        <div class="custom_td w_custom_14">07/31/2020</div>
-                        <div class="custom_td w_custom_14">03/04/2021</div>
-                        <div class="custom_td w_custom_5 text-center"><span><img src="./images/icons/ic-edit-client.svg"
-                              alt="ic-edit-client"></span></div>
-                      </div>
-                      <div class="custom_tr row">
-                        <div class="custom_td w_custom_25">AGS-Samsung Electronics Corporation</div>
-                        <div class="custom_td w_custom_14">AG069</div>
-                        <div class="custom_td w_custom_14">New York</div>
-                        <div class="custom_td w_custom_14">Alabama</div>
-                        <div class="custom_td w_custom_14">07/31/2020</div>
-                        <div class="custom_td w_custom_14">03/04/2021</div>
-                        <div class="custom_td w_custom_5 text-center"><span><img src="./images/icons/ic-edit-client.svg"
-                              alt="ic-edit-client"></span></div>
-                      </div>
-                      <div class="custom_tr row">
-                        <div class="custom_td w_custom_25">AGS-Samsung Electronics Corporation</div>
-                        <div class="custom_td w_custom_14">AG069</div>
-                        <div class="custom_td w_custom_14">New York</div>
-                        <div class="custom_td w_custom_14">Alabama</div>
-                        <div class="custom_td w_custom_14">07/31/2020</div>
-                        <div class="custom_td w_custom_14">03/04/2021</div>
-                        <div class="custom_td w_custom_5 text-center"><span><img src="./images/icons/ic-edit-client.svg"
-                              alt="ic-edit-client"></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- tab 2 content \ -->
-            </div>
           </div>
         </div>
       </div>
@@ -691,7 +486,7 @@
   <div class="custom_modal notes_modal modal_xre max_width_55" id="add_ere_modal">
     <div class="custom_modal_wrap">
       <div class="custom_modal_header">
-        <h5 class="modal-title">Add ERE</h5>
+        <h5 class="modal-title">Add CRE</h5>
         <button class="close">
           <img src="./images/icons/ic-close.svg" alt="ic-close" />
         </button>
@@ -699,7 +494,7 @@
       <div class="custom_modal_body col-lg-12 p_2 d-flex">
         <div class="col-lg-7 colOne pr_5">
           <div class="form_control">
-            <label for="ERName" class="text_10">ERE Name</label>
+            <label for="ERName" class="text_10">CRE Name</label>
             <input type="text" id="ERName" class="text_12">
           </div>
           <div class="form_control">
@@ -753,7 +548,7 @@
       <div class="custom_modal_footer pb_3 pl_3 pr_3 pt_0">
         <div class="col-lg-12 p_0 text_right">
           <button class="secondary_btn">Reset</button>
-          <button class="primary_btn ml_2">Add ERE</button>
+          <button class="primary_btn ml_2">Add CRE</button>
         </div>
       </div>
     </div>
@@ -761,7 +556,7 @@
   <div class="custom_modal notes_modal modal_xre max_width_55" id="edit_ere_modal">
     <div class="custom_modal_wrap">
       <div class="custom_modal_header">
-        <h5 class="modal-title">Edit ERE Profile</h5>
+        <h5 class="modal-title">Edit CRE Profile</h5>
         <button class="close">
           <img src="./images/icons/ic-close.svg" alt="ic-close" />
         </button>
@@ -769,7 +564,7 @@
       <div class="custom_modal_body col-lg-12 p_2 d-flex">
         <div class="col-lg-7 colOne pr_5">
           <div class="form_control">
-            <label for="ERName" class="text_10">ERE Name</label>
+            <label for="ERName" class="text_10">CRE Name</label>
             <input type="text" id="ERName" class="text_12" value="Vijay Parmar" />
           </div>
           <div class="form_control">
@@ -842,7 +637,7 @@
   <div class="custom_modal notes_modal modal_xre" id="edit_def_client_modal">
     <div class="custom_modal_wrap overfloww">
       <div class="custom_modal_header">
-        <h5 class="modal-title">Edit Client (Default)</h5>
+        <h5 class="modal-title">Edit Client</h5>
         <button class="close">
           <img src="./images/icons/ic-close.svg" alt="ic-close" />
         </button>
@@ -1056,7 +851,7 @@
   <div class="custom_modal notes_modal modal_xre" id="add_def_client_modal">
     <div class="custom_modal_wrap overfloww">
       <div class="custom_modal_header">
-        <h5 class="modal-title">Add Default Client</h5>
+        <h5 class="modal-title">Add Client</h5>
         <button class="close">
           <img src="./images/icons/ic-close.svg" alt="ic-close" />
         </button>
