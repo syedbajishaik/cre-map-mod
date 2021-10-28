@@ -84,6 +84,10 @@ $(document).ready(function () {
     $('*[data-content], *[data-tab]').removeClass('active');
     $('*[data-content="' + tabname + '"], *[data-tab="' + tabname + '"]').addClass('active');
   }
+  $('.closeThisBlock').on('click', function(){
+    $(this).closest('.parentBlock').remove();
+    $('.ere_card').addClass('only_card');
+  });
 })
 $(function () {
   $('.box').matchHeight();
